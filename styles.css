@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Slabo+27px&family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cardo", serif;
+    background-color: #FAF9F6;
+    margin: 0 auto; 
+    max-width: 1024px; 
+    width: 95%; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    color: #030303;
+}
+
+h1 {
+    font-size: 26px; 
+}
+
+p {
+    font-size: 20px; 
+}
+
+header img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 20px; /* Rounded corners */
+    background-color: #ffffff; /* Background color */
+    object-fit: cover; 
+}
+
+/* Sections */
+section {
+    padding-top: 4vh;
+    height: auto; 
+    margin: 0 10rem 4vh;
+    box-sizing: border-box;
+    min-height: 100vh; 
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Resume and Contact Me Buttons */
+.resume-button,
+.contact-button {
+    padding: 10px 20px;
+    background-color: #ffffff; /* Background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background: #5783db;
+    border: none;
+    outline: none;
+    border-radius: 20px; 
+    overflow: hidden;
+    font-family: "Cardo", serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background:  #3735b0;
+}
+
+.button:active {
+    background: #4681f4;
+}
+
+.button__text,
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+}
+
+.button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* About and Infographic Section */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Shading */
+}
+
+.about-container,
+.infographic-container {
+    flex: 1;
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray text */
+}
+
+.about-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555; /* Medium gray text */
+}
+
+.infographic-container {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.infographic-container ul {
+    list-style-type: none;
+    
+}
+
+.infographic-container ul li {
+    margin-bottom: 10px;
+}
+
+.infographic-container ul li strong {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+}
+
+.about-section, .infographic-container {
+    border: 2px solid #000;
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 10px; 
+}
+
+
+.arrow {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+    z-index: 1000; 
+    transition: transform 0.3s ease; 
+}
+
+.arrow:hover {
+    transform: translateY(5px); 
+}
+
+/* Education Section */
+.education-section {
+    margin-top: 40px;
+}
+
+.education-box {
+    width: 100%;
+    height: 200px; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.color-block {
+    width: 30%; 
+    height: 100%;
+    float: left;
+    display: flex;
+    margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-background {
+    background-color:#0476D0;
+}
+
+.white-background {
+    background-color: #ffffff;
+}
+
+.education-content {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.blue-text {
+    color: #ffffff; 
+}
+

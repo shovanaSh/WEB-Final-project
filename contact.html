@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="web.js" defer></script>
+</head>
+
+<body>
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" action="https://httpbin.org/post" method="post">
+
+        <!-- Name Input -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Address Input -->
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <!-- City Input -->
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cities" required>
+            <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Vancouver"></option>
+                <option value="Montreal"></option>
+            </datalist>
+        </div>
+
+        <!-- Postal Code Input -->
+        <div class="form-group">
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+        </div>
+
+        <!-- Subject Radio Buttons -->
+        <div class="form-group">
+            <label>What is this about?</label><br>
+            <input type="radio" id="questionRadio" name="subject" value="Question" required> Question<br>
+            <input type="radio" id="commentRadio" name="subject" value="Comment" required> Comment<br>
+            <input type="radio" id="hiringRadio" name="subject" value="Hiring" required> Hiring
+        </div>
+
+        <!-- Hourly Rate Input (Hidden by Default) -->
+        <div id="hourlyRate" style="display: none;" class="form-group">
+            <label for="rate">Hourly Rate:</label>
+            <input type="number" id="rate" name="hourlyRate" min="0" step="0.01">
+        </div>
+
+        <!-- Message Textarea -->
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Additional Information Input -->
+        <div class="form-group">
+            <label for="other">Additional Information:</label>
+            <input type="text" id="other" name="other">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
