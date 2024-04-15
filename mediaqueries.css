@@ -1,108 +1,28 @@
 /* Media Queries for Responsive Design */
 
-/* For screens up to 1400px */
-@media screen and (max-width: 1400px) {
-  #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-  }
-  .about-containers {
-      flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-      height: fit-content;
-  }
+/* For mobile phones (up to 400px) */
+[class*="col-"] {
+  width: 100%;
 }
 
-/* For screens up to 1200px */
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-      display: none;
+/* For screens greater than 400px */
+@media only screen and (min-width: 400px) {
+  /* General styling adjustments */
+  body {
+      font-size: 16px; /* Adjust as per your requirement */
   }
-  #hamburger-nav {
-      display: flex;
-  }
-  #experience,
-  .experience-details-container {
-      margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-      display: block;
-  }
-  .arrow {
-      display: none;
-  }
-  section,
-  .section-container {
-      height: fit-content;
-  }
-  section {
-      margin: 0 5%;
-  }
-  .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-  }
-  .about-containers {
-      margin-top: 0;
-  }
-}
 
-/* For screens up to 600px */
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-      height: 40vh;
-  }
-  #profile {
-      height: 83vh;
-      margin-bottom: 0;
-  }
-  article {
-      font-size: 1rem;
-  }
-  footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-      flex-wrap: wrap;
-  }
-  .contact-info-container {
-      margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-      font-size: 1rem;
-  }
-  .experience-sub-title {
-      font-size: 1.25rem;
-  }
-  .logo {
-      font-size: 1.5rem;
-  }
-  .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-  }
-  .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-  }
-  .section__text__p2 {
-      font-size: 1.25rem;
-  }
-  .title {
-      font-size: 2rem;
-  }
-  .text-container {
-      text-align: justify;
-  }
+  /* For tablets and larger screens */
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
 }
