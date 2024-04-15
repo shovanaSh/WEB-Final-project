@@ -1,3 +1,15 @@
+/* Media Queries for Responsive Design */
+
+/* For screens up to 1400px */
+@media screen and (max-width: 1400px) {
+  .about-containers {
+      flex-wrap: wrap;
+  }
+  #contact {
+      height: fit-content;
+  }
+}
+
 /* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
   .section-container {
@@ -127,16 +139,12 @@
       background-color: #fff;
   }
 
-  .blue-text {
-      color: #007BFF;
-  }
-
   .white-background {
       background-color: #fff;
   }
 
   .new-background {
-      background-color: #f0f0f0;
+      background-color: #0476D0;
   }
 
   .education-content p {
